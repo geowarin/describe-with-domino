@@ -1,0 +1,32 @@
+{
+  "name": "describe-with-domino",
+  "version": "1.0.0",
+  "description": "Wraps mocha's describe function with domino and cleans up globals afterwards",
+  "main": "src/index.js",
+  "scripts": {
+    "test:default": "mocha test/test.js",
+    "test:only": "mocha test/test-only.js",
+    "test": "npm run test:default && npm run test:only"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/geowarin/describe-with-domino.git"
+  },
+  "keywords": [
+    "domino",
+    "mocha",
+    "enzyme"
+  ],
+  "author": "Geoffroy Warin",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/geowarin/describe-with-domino/issues"
+  },
+  "dependencies": {
+    "domino": "^1.0.25"
+  },
+  "devDependencies": {
+    "expect": "^1.20.1",
+    "mocha": "^2.5.3"
+  }
+}
